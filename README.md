@@ -10,3 +10,8 @@ My first DevOps project.
 - GitHub Actions
 - AWS
 - Terraform
+
+## Goal
+
+Build a complete DevOps project from application code
+to cloud deployment.
