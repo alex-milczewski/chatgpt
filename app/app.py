@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 
 app = Flask(__name__)
@@ -5,7 +7,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello from DevOps project!"
+    environment = os.getenv("ENVIRONMENT", "unknown")
+    return f"Hello from DevOps project! Environment: {environment}"
 
 
 @app.route("/health")
